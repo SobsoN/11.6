@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+body {
+  background-color: #ff8; }
+
+.board {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .board h1 {
+    font-size: 4.5em;
+    color: #333;
+    font-family: 'Lobster', cursive; }
+  .board .create-column {
+    margin-top: 50px;
+    display: block;
+    border: none;
+    border-radius: 10%;
+    min-width: 200px;
+    min-height: 40px;
+    background-color: #f14;
+    font-size: 3em;
+    font-family: 'Indie Flower';
+    cursor: pointer;
+    padding: 0 10px; }
+  .board .column-container {
+    margin-top: 50px;
+    display: flex;
+    max-width: 750px;
+    width: 100%;
+    justify-content: center;
+    text-align: center; }
+    .board .column-container .column {
+      max-width: 250px;
+      width: 100%; }
+      .board .column-container .column h2 {
+        font-family: 'Indie Flower';
+        font-size: 2.5em;
+        padding-bottom: 5px; }
+      .board .column-container .column .add-card {
+        border: none;
+        width: 150px;
+        height: 50px;
+        background: #444;
+        margin: 0 5px;
+        color: #fff;
+        cursor: pointer;
+        font-style: bold;
+        padding: 7px 0px;
+        font-size: 1.5em;
+        border-radius: 10%;
+        font-family: 'Indie Flower'; }
+      .board .column-container .column .btn-delete {
+        border: none;
+        font-size: 2em;
+        background: transparent;
+        display: inline-block;
+        cursor: pointer; }
+      .board .column-container .column .card {
+        display: flex;
+        justify-content: center;
+        margin: 20px 10px;
+        min-height: 100px;
+        background-color: #aaa;
+        color: #000;
+        position: relative;
+        border-radius: 15px; }
+        .board .column-container .column .card__description {
+          align-self: center;
+          font-size: 1.3em; }
+        .board .column-container .column .card .btn-delete {
+          position: absolute;
+          top: -5%;
+          right: 0; }
+
+/*# sourceMappingURL=style.css.map */
